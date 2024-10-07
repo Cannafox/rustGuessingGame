@@ -7,11 +7,12 @@ fn main() {
 
     let random_number: u32 = rand::thread_rng().gen_range(1..=10);
 
+    println!(
+        "I am thinking about number {}, about what number I am thinking?",
+        random_number
+    );
+
     loop {
-        println!(
-            "I am thinking about number {}, about what number I am thinking?",
-            random_number
-        );
         println!("Enter your number: ");
 
         let mut user_guess = String::new();
